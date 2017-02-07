@@ -115,11 +115,11 @@ public class FormChallenge extends Application {
       @Override
         public void handle(ActionEvent e) {
           // MALE
-          if (comboBoxGender.getValue().toString().equals("Male")) {
+          if (comboBoxGender.getValue().equals("Male")) {
             root2.getChildren().add(masukM);
             stage.setScene(scene2);
           // FEMALE
-          } else if (comboBoxGender.getValue().toString().equals("Female")) {
+          } else if (comboBoxGender.getValue().equals("Female")) {
             root2.getChildren().add(masukF);
             stage.setScene(scene2);
           // ELSE NOT 2 OF THEM
